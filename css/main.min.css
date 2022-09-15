@@ -1,0 +1,246 @@
+@font-face {
+  font-family: roboto-example;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/RobotoRegular/RobotoRegular.eot);
+  src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: roboto-example;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/RobotoBold/RobotoBold.eot);
+  src: url(../fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoBold/RobotoBold.woff) format("woff"),url(../fonts/RobotoBold/RobotoBold.ttf) format("truetype")
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+body {
+  line-height: 1
+}
+ol,
+ul {
+  list-style: none
+}
+blockquote,
+q {
+  quotes: none
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none
+}
+body {
+  font-family: roboto-example,sans-serif
+}
+.game {
+  background: url(../images/dest/ease.png);
+  background-repeat: repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.hide {
+  display: none
+}
+.car,
+.enemy {
+  width: 50px;
+  height: 100px;
+  background: transparent url(../images/dest/player.png) center/cover no-repeat;
+  position: absolute
+}
+.rotateRight {
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg)
+}
+.rotateleft {
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg)
+}
+.wrapArea {
+  height: 100%;
+  position: absolute;
+  width: 800px;
+  overflow: hidden
+}
+.gameArea {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background: #222;
+  overflow: hidden
+}
+.tree {
+  position: absolute;
+  background: transparent url(../images/dest/tree.png) center/cover no-repeat;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 190
+}
+.line {
+  position: absolute;
+  width: 10px;
+  background: #fff;
+  left: 145px;
+  margin: 0;
+  padding: 0
+}
+.start {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  z-index: 200;
+  color: #fff;
+  font-size: 1.5rem;
+  background: #000
+}
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 1rem 0;
+  z-index: 200;
+  font-size: 1.5rem;
+  color: #87ceeb;
+  text-align: center
+}
+.btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #000
+}
+#topScore {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  z-index: 220;
+  font-size: 30px;
+  background-color: #000;
+  color: #fff
+}
